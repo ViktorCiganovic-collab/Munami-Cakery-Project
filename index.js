@@ -1,9 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
+require('dotenv').config(); // Load environment variables from .env file
+
 
 const app = express();
 const PORT = process.env.PORT || 3002;
+// Use the MONGO_URI environment variable
+const MONGO_URI = process.env.MONGO_URI;
 
 // Middleware
 app.use(express.json());
@@ -11,9 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname)));
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://<viktorciganovic>:<db_password>@databasecluster.a4chr.mongodb.net/ordersFromCustomers?retryWrites=true&w=majority&appName=DatabaseCluster', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
-    .catch(err => console.error(err));
+    .catch(err => console.error('MongoDB connection error:', err));
 
 // Mongoose model for orders
 const orderSchema = new mongoose.Schema({
