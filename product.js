@@ -1,3 +1,10 @@
+
+$(document).ready(function () {
+    console.log("Document is ready");
+    $('.fade-in-text-one').fadeIn(1500).removeClass('hidden');
+    $('.fade-in-text-two').fadeIn(5000).removeClass('hidden');
+});
+
 const itemContainer = document.querySelector(".cupcakes");
 // const cakesContainer = document.querySelector(".cakes");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
