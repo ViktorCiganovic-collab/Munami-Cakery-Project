@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let label = document.getElementById("label");
     let basket = JSON.parse(localStorage.getItem("data")) || [];
 
+    $(document).ready(function () {
+        console.log("Document is ready");
+        $('.fade-in-text-one').fadeIn(1500).removeClass('hidden');
+        $('.fade-in-text-two').fadeIn(5000).removeClass('hidden');
+    });
+
     const products = [
         { name: "Easy Chocolate Cupcake", category: "Cupcake", image: "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1-300x300.jpg", price: 12.5 },
         { name: "Heavenly Chocolate Cupcake", category: "Cupcake", image: "https://heavenlycupcake.se/wp-content/uploads/2022/05/030422-chokladcupcakes-med-chokladpudding-05-300x300.jpg", price: 7.5 },
