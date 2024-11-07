@@ -6,7 +6,18 @@ body, html {
     font-family: "Gloria Hallelujah", cursive;   
     font-weight: 400;
     font-style: normal;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -27,7 +38,7 @@ text-decoration: underline;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: -1; /* Make sure the background stays behind the content */
     background-image: url('https://www.irishtimes.com/resizer/v2/P3ZTQUJ774VLO4V6PWA5IRWYAE.jpg?auth=6df12d4a4b31b3487f4ef4edeed23e08e0bf9611af7ac7a44232e5056283f67e&smart=true&width=1600&height=900'); /* Default image */
@@ -39,7 +50,7 @@ text-decoration: underline;
 /* Mobile-specific background image */
 @media (max-width: 768px) {
     .bg-img {
-        background-image: url('https://www.harrybatten.co.uk/cdn/shop/files/naked_wedding_cake_pink_banner_4cce6f7b-6bec-4988-8d6d-40d359627550.jpg?v=1715113489&width=3840') !important; /* Change to a different image for mobile */
+        background-image: url('https://mimisbakehouse.com/wp-content/uploads/2022/08/mimis-wedding-7-1.jpg') !important;
         background-position: center center !important; /* Center the background image on mobile */
         background-size: cover !important; /* Ensure it covers the mobile screen */
     }
@@ -47,8 +58,7 @@ text-decoration: underline;
 
 /* Even smaller screens under 480px */
 @media (max-width: 480px) {
-    .bg-img {
-        background-image: url('https://www.harrybatten.co.uk/cdn/shop/files/naked_wedding_cake_pink_banner_4cce6f7b-6bec-4988-8d6d-40d359627550.jpg?v=1715113489&width=3840') !important;
+    .bg-img {        
         background-position: center center !important;
         background-size: cover !important;
     }
