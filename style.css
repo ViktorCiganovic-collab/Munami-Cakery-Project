@@ -9,6 +9,7 @@ body, html {
     scroll-behavior: smooth;    
 }
 
+
 *,
 *::before,
 *::after {
@@ -29,8 +30,17 @@ height: 100%;
 width: 60px;
 }
 
+.nav-item {
+font-size: 20px;
+}
+
 .nav-item:hover {
 text-decoration: underline;
+}
+
+.welcome_text {
+font-size: 42px;
+text-decoration: underline !important;
 }
 
 /* Set the default background image for large screens */
@@ -54,6 +64,10 @@ text-decoration: underline;
         background-position: center center !important; /* Center the background image on mobile */
         background-size: cover !important; /* Ensure it covers the mobile screen */
     }
+
+    .welcome_text {
+        font-size: 24px;
+        }
 }
 
 /* Even smaller screens under 480px */
