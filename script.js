@@ -8,7 +8,7 @@ $(document).ready(function () {
     
     $(document).ready(function () {
         console.log("Document is ready");
-        $('.fade-in-text-one').fadeIn(1500).removeClass('hidden');
+        $('.fade-in-text-one').fadeIn(2000).removeClass('hidden');
         $('.fade-in-text-two').fadeIn(5000).removeClass('hidden');
     });
     

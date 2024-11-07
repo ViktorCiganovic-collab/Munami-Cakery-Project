@@ -1,6 +1,6 @@
 /*Common selectors */
 body, html {
-    height: auto;
+    height: 100%;
     width: 100%;
     margin: 0;    
     font-family: "Gloria Hallelujah", cursive;
@@ -13,15 +13,38 @@ height: 100%;
 width: 60px;
 }
 
-.bg-img {    
+/* Set the default background image for large screens */
+.bg-img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh; 
-    z-index: -1; /* Keep the background image behind other elements */
-    object-fit: cover; /* Ensures the image covers the entire viewport */   
+    height: 100vh;
+    z-index: -1; /* Make sure the background stays behind the content */
+    background-image: url('https://www.irishtimes.com/resizer/v2/P3ZTQUJ774VLO4V6PWA5IRWYAE.jpg?auth=6df12d4a4b31b3487f4ef4edeed23e08e0bf9611af7ac7a44232e5056283f67e&smart=true&width=1600&height=900'); /* Default image */
+    background-position: center right; /* Position the background image to the right */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevent image from repeating */
 }
+
+/* Mobile-specific background image */
+@media (max-width: 768px) {
+    .bg-img {
+        background-image: url('https://www.harrybatten.co.uk/cdn/shop/files/naked_wedding_cake_pink_banner_4cce6f7b-6bec-4988-8d6d-40d359627550.jpg?v=1715113489&width=3840') !important; /* Change to a different image for mobile */
+        background-position: center center !important; /* Center the background image on mobile */
+        background-size: cover !important; /* Ensure it covers the mobile screen */
+    }
+}
+
+/* Even smaller screens under 480px */
+@media (max-width: 480px) {
+    .bg-img {
+        background-image: url('https://www.harrybatten.co.uk/cdn/shop/files/naked_wedding_cake_pink_banner_4cce6f7b-6bec-4988-8d6d-40d359627550.jpg?v=1715113489&width=3840') !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+}
+
 
 .container {
     margin-top: 60px; /* Space below the sticky cart */
@@ -35,22 +58,32 @@ width: 60px;
     }
 
 
+
+
 /*Shopping cart*/
+/* Ensuring sticky cart behavior */
 .cartContainer {
-position: sticky;
-right: 20px;
-top: 20px;
-z-index: 2;
-background-color: transparent; /* Make background transparent */
-display: flex;
-justify-content: right;
-cursor: pointer;
-margin-right: 10px;
+    position: -webkit-sticky; /* For Safari support */
+    position: sticky;
+    top: 20px; /* Stick the cart 20px from the top of the viewport */
+    right: 20px;
+    z-index: 2;
+    background-color: transparent; /* Make background transparent */
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    margin-right: 10px;
+    /* Add padding or margin if you want some spacing from the sides */
+}
+
+
+/* Ensure that no parent of .cartContainer has overflow:hidden */
+.img-section, .container, .navbar {
+    overflow: visible; /* Make sure overflow is visible */
 }
 
 .cart {
-    position: relative;
-    
+    position: relative;    
     background-color: #fff;
     color: #212529;
     font-size: 30px;
@@ -89,6 +122,7 @@ margin-right: 10px;
 footer {
     width: 100vw;
     height: auto;
+    background-color: #add8e6 !important;
     }
     
     .sectionRatings {
@@ -126,7 +160,6 @@ height: auto;
 .card {
 box-shadow: 1px 2px 5px 1px;
 }
-
 
 .cucpakes , .cakes {
 height: auto;
@@ -171,7 +204,6 @@ cursor: pointer;
 color: red;
 }
 
-
 .icon-wrapper, .icon-wrapper-remove  {
     transition: transform 0.3s; /* Smooth scaling transition */
 }
@@ -195,8 +227,6 @@ cursor: pointer;
 }
 
 /*End of Product card styling*/
-
-
 
 /*Cart.html*/
 .checkoutProducts {
@@ -233,3 +263,4 @@ margin: 20px auto;
     flex: 1; /* Allow the body to take up remaining space */
 }
 /*End of Cart.html*/
+
