@@ -1,17 +1,25 @@
 /*Common selectors */
 body, html {
     height: 100%;
-    width: 100%;
+    width: 100%;    
     margin: 0;    
-    font-family: "Gloria Hallelujah", cursive;
+    font-family: "Gloria Hallelujah", cursive;   
     font-weight: 400;
     font-style: normal;
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .logo {
 height: 100%;
 width: 60px;
+}
+
+.nav-item:hover {
+text-decoration: underline;
 }
 
 /* Set the default background image for large screens */
