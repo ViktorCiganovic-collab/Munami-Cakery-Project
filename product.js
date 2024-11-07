@@ -10,7 +10,7 @@ const itemContainer = document.querySelector(".cupcakes");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 const products = [
-    { name: "Easy Chocolate Cupcake", category: "Cupcake", image: "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1-300x300.jpg", price: 12.5 },
+    { name: "Easy Chocolate Cupcake", category: "Cupcake", image: "https://handletheheat.com/wp-content/uploads/2021/02/chocolate-cupcakes-SQUARE-500x500.png", price: 12.5 },
     { name: "Heavenly Chocolate Cupcake", category: "Cupcake", image: "https://heavenlycupcake.se/wp-content/uploads/2022/05/030422-chokladcupcakes-med-chokladpudding-05-300x300.jpg", price: 7.5 },
     { name: "Air Fryer Cupcake", category: "Cupcake", image: "https://www.supergoldenbakes.com/wordpress/wp-content/uploads/2023/03/Air_Fryer_Cupcakes-1-4-300x300.jpg", price: 8 },
     { name: "Rainbow Cupcake", category: "Cupcake", image: "https://www.sugarhero.com/wp-content/uploads/2014/07/exploding-cupcakes-alt-1-sq-featured-image-300x300.jpg", price: 20 },
