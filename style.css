@@ -70,6 +70,10 @@ text-decoration: underline !important;
     .welcome_text {
         font-size: 24px;
         }
+
+    .aboutSection, .payment-information {
+        width: 90% !important;       
+    }
 }
 
 /* Even smaller screens under 480px */
