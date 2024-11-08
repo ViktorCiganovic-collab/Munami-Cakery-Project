@@ -15,7 +15,7 @@ const products = [
     { name: "Air Fryer Cupcake", category: "Cupcake", image: "https://www.supergoldenbakes.com/wordpress/wp-content/uploads/2023/03/Air_Fryer_Cupcakes-1-4-300x300.jpg", price: 8 },
     { name: "Rainbow Cupcake", category: "Cupcake", image: "https://www.sugarhero.com/wp-content/uploads/2014/07/exploding-cupcakes-alt-1-sq-featured-image-300x300.jpg", price: 20 },
     { name: "Cupcake Autumn", category: "Cupcake", image: "https://malvia.se/wp-content/uploads/2024/08/17150-300x300.jpg", price: 14 },
-    { name: "Lemon Curd Cupcake", category: "Cupcake", image: "https://www.tamingtwins.com/wp-content/uploads/2019/04/lemon-drizzle-cupcakes-recipe-1-500x500.jpg", price: 5 },
+    // { name: "Lemon Curd Cupcake", category: "Cupcake", image: "https://www.tamingtwins.com/wp-content/uploads/2019/04/lemon-drizzle-cupcakes-recipe-1-500x500.jpg", price: 5 },
     { name: "Chocolate Cupcake Peanut Butter", category: "Cupcake", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-FEGWH7FROzJ5b7FwnSfI0q5t6zg1hQsaTw&s", price: 8 },
     { name: "Strawberry Cupcake", category: "Cupcake", image: "https://www.glutenfreetranquility.com/wp-content/uploads/2021/06/Gluten-free-victoria-sponge-cupcakes-300x300.jpg", price: 20 },
     { name: "Choko Chip Cake", category: "Cake", image: "https://charlysbakery.co.za/wp-content/uploads/2022/03/Chocolate-Extravaganza-mini-single-tier-all-dark-chocolates-300x300.jpg", price: 55},
