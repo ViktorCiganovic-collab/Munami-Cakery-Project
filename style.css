@@ -361,6 +361,8 @@ margin: 20px auto;
     transition: 0.5s;
     padding: 8px;
     border-radius: 8px;
+    height: auto;
+    min-height: 50px;
 }
 
 .cartBtn:hover {
