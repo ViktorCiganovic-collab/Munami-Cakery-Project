@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             label.innerHTML = `
                 <h2>Cart is Empty</h2>
                 <a href="product.html">
-                    <button class="HomeBtn">Back to home</button>
+                    <button class="cartBtn">Back to home</button>
                 </a>`;
         }
     };
@@ -78,8 +78,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             label.innerHTML = `
                 <h2>Total Bill : $ ${amount.toFixed(2)}</h2>
-                <button class="checkout">Back</button>
-                <button onclick="clearCart()" class="removeAll">Clear Cart</button>`;
+                <a href="product.html"><button class="checkout cartBtn">Back</button></a>
+                <button onclick="clearCart()" class="removeAll cartBtn">Clear Cart</button>`;
         }
     };
 

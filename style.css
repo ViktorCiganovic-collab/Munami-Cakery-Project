@@ -34,6 +34,11 @@ width: 60px;
 text-decoration: underline;
 }
 
+.nav-item.active {
+    font-weight: bold;
+    color: red;  /* Change color to indicate it's active */
+  }
+
 .welcome_text {
 font-size: 42px;
 text-decoration: underline !important;
@@ -76,10 +81,10 @@ background-repeat: no-repeat;
 }
 
 #hero_section_cart {
-background-image: url('https://images.pexels.com/photos/239581/pexels-photo-239581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-image: url('https://images.pexels.com/photos/827513/pexels-photo-827513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 width: 100%;
 height: auto;
-background-position: left;
+background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 }
@@ -350,5 +355,16 @@ margin: 20px auto;
 .card-body {
     padding: 10px; /* Add padding inside the card body */
     flex: 1; /* Allow the body to take up remaining space */
+}
+
+.cartBtn {
+    transition: 0.5s;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.cartBtn:hover {
+transform: scale(1.05);
+background: greenyellow;
 }
 /*End of Cart.html*/
