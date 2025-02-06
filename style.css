@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 /*Common selectors */
 body {
     height: 100%;
     width: 100%;    
     margin: 0;    
-    font-family: "Gloria Hallelujah", cursive;   
-    font-weight: 400;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;    
     font-style: normal;
     scroll-behavior: smooth; 
 }
@@ -164,11 +166,11 @@ background-repeat: no-repeat;
     justify-content: right;
     cursor: pointer;
     margin-right: 10px;
-    /* Add padding or margin if you want some spacing from the sides */
+   
 }
 
 
-/* Ensure that no parent of .cartContainer has overflow:hidden */
+
 .img-section, .container, .navbar {
     overflow: visible; /* Make sure overflow is visible */
 }
@@ -334,11 +336,11 @@ margin: 20px auto;
 }
 
 .checkout_cards {
-    width: 300px; /* Set a fixed width for each card */
-    margin: 10px; /* Spacing between cards */
+    width: 300px; 
+    margin: 10px; 
     border: 1px solid #ccc; /* Optional: Add a border to cards */
     border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
     text-align: center; /* Center text in the card */
     background-color: #fff; /* Background color for cards */
     display: flex; /* Enable flexbox for card content */
