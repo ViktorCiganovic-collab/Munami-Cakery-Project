@@ -10,7 +10,11 @@ body {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;    
     font-style: normal;
-    scroll-behavior: smooth;           
+    scroll-behavior: smooth;    
+    background: linear-gradient(135deg, #fcb69f, #fdbf77);
+
+
+       
 }
 
 html, body {
