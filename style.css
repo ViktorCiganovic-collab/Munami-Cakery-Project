@@ -13,7 +13,6 @@ body {
     scroll-behavior: smooth;           
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -46,23 +45,19 @@ text-decoration: underline !important;
 }
 
 #hero_section {
-background-image: url('https://i.postimg.cc/NG3mLVWm/output.jpg');    
+background-image: url('https://i.postimg.cc/L54bMHp7/output-4.png');    
 width: 100%;
 height: auto;
 background-size: cover;
 background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
 }
 
 #hero_section_about {
-background-image: url('https://i.postimg.cc/TPQtSDsn/output.jpg');
+background-image: url('https://i.postimg.cc/zG2jFrHk/output.jpg');
 width: 100%;
 height: auto;
 background-size: cover;
 background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
 }
 
 #hero_section_products {
