@@ -11,13 +11,19 @@ body {
 
 body {
     
-    background: #f0d7a7;
+    background: linear-gradient(to right, #f9d26d, #f4c6d4); /* Golden Yellow to Light Pink */
+
 }
 
 
 * {
     margin: 0;
     padding: 0;
+}
+
+a {
+    font-weight: bold;
+    font-size: large;
 }
 
 body {
@@ -45,46 +51,41 @@ text-decoration: underline !important;
 }
 
 #hero_section {
-background-image: url('https://images.pexels.com/photos/8356208/pexels-photo-8356208.jpeg');    
-width: 50%;
-height: 100vh;
-background-position: left;
-background-size: contain;
+background-image: url('https://i.postimg.cc/J469MBtQ/qzzEmPd.jpg');    
+width: 100%;
+height: auto;
+background-size: cover;
 background-repeat: no-repeat;
 }
 
 #hero_section_about {
-background-image: url('https://images.pexels.com/photos/1346382/pexels-photo-1346382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-image: url('https://i.postimg.cc/jjX6YySx/output-5.png');
 width: 100%;
 height: auto;
-background-position: left;
-background-size: contain;
+background-size: cover;
 background-repeat: no-repeat;
 }
 
 #hero_section_products {
-background-image: url('https://images.pexels.com/photos/27820704/pexels-photo-27820704/free-photo-of-a-display-of-pastries-with-different-flavors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-image: url('https://i.postimg.cc/2SgMBRQb/output-3.jpg');
 width: 100%;
 height: auto;
-background-position: left;
-background-size: contain;
+background-size: cover;
 background-repeat: no-repeat;
 }
 
 #hero_section_contact {
-background-image: url('https://images.pexels.com/photos/13647832/pexels-photo-13647832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-image: url('https://i.postimg.cc/L54bMHp7/output-4.png');
 width: 100%;
 height: auto;
-background-position: left;
-background-size: contain;
+background-size: cover;
 background-repeat: no-repeat;
 }
 
 #hero_section_cart {
-background-image: url('https://images.pexels.com/photos/827513/pexels-photo-827513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-image: url('https://i.postimg.cc/2SgMBRQb/output-3.jpg');
 width: 100%;
 height: auto;
-background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 }
