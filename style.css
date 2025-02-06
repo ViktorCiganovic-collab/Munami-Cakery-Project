@@ -92,34 +92,15 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 520px) {
 
     #hero_section, #hero_section_about, #hero_section_products, #hero_section_contact, #hero_section_cart {
         background-size: cover;
         background-position: center;
     }
 }
-
-/* Set the default background image for large screens */
-.bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Make sure the background stays behind the content */       
-    background-size: cover !important; /* Ensure the image covers the entire viewport */
-    background-repeat: no-repeat; /* Prevent image from repeating */
-}
-
-
 /* Mobile-specific background image */
-@media (max-width: 768px) {
-    .bg-img {
-        
-        background-position: center center !important; /* Center the background image on mobile */
-        background-size: cover !important; /* Ensure it covers the mobile screen */
-    }
+@media (max-width: 768px) { 
 
     .welcome_text {
         font-size: 24px;
@@ -129,15 +110,6 @@ background-repeat: no-repeat;
         width: 90% !important;       
     }
 }
-
-/* Even smaller screens under 480px */
-@media (max-width: 480px) {
-    .bg-img {        
-        background-position: center center !important;
-        background-size: cover !important;
-    }
-}
-
 
 .container {
     margin-top: 60px; /* Space below the sticky cart */
