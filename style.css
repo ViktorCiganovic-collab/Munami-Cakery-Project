@@ -10,14 +10,27 @@ body {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;    
     font-style: normal;
-    scroll-behavior: smooth;   
-    background: linear-gradient(to right, #f9d26d, #f4c6d4);    
+    scroll-behavior: smooth;           
+}
+
+html, body {
+    overflow-x: hidden; 
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 * {
     margin: 0;
     padding: 0;
 }
+
 
 a {
     font-weight: bold;
@@ -36,7 +49,7 @@ text-decoration: underline;
 
 .nav-item.active {
     font-weight: bold;
-    color: red;  /* Change color to indicate it's active */
+    color: red;
   }
 
 .welcome_text {
@@ -50,6 +63,7 @@ width: 100%;
 height: auto;
 background-size: cover;
 background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
 #hero_section_about {
@@ -58,6 +72,7 @@ width: 100%;
 height: auto;
 background-size: cover;
 background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
 #hero_section_products {
@@ -66,6 +81,7 @@ width: 100%;
 height: auto;
 background-size: cover;
 background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
 #hero_section_contact {
@@ -74,6 +90,7 @@ width: 100%;
 height: auto;
 background-size: cover;
 background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
 #hero_section_cart {
@@ -82,6 +99,7 @@ width: 100%;
 height: auto;
 background-size: cover;
 background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
 @media (max-width: 520px) {
@@ -113,9 +131,6 @@ background-repeat: no-repeat;
     width: 100% !important;
     margin: 0;
     }
-
-
-
 
 /*Shopping cart*/
 /* Ensuring sticky cart behavior */
