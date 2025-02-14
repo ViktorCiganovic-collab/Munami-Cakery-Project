@@ -17,7 +17,7 @@ const products = [
     { name: "Cupcake Autumn", category: "Cupcake", image: "https://malvia.se/wp-content/uploads/2024/08/17150-300x300.jpg", price: 14 },
     { name: "Lime Cupcake", category: "Cupcake", image: "https://blog.wilton.com/wp-content/uploads/sites/2/2019/05/how-to-make-a-giant-cupcake-feature-500x500.jpg", price: 18 },    
     { name: "Chocolate Cupcake Peanut Butter", category: "Cupcake", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-FEGWH7FROzJ5b7FwnSfI0q5t6zg1hQsaTw&s", price: 8 },
-    { name: "Strawberry Cupcake", category: "Cupcake", image: "https://www.glutenfreetranquility.com/wp-content/uploads/2021/06/Gluten-free-victoria-sponge-cupcakes-300x300.jpg", price: 20 },
+    { name: "Strawberry Cupcake", category: "Cupcake", image: "https://i.postimg.cc/nLTZkLjK/output.jpg", price: 20 },
     { name: "Choko Chip Cake", category: "Cake", image: "https://charlysbakery.co.za/wp-content/uploads/2022/03/Chocolate-Extravaganza-mini-single-tier-all-dark-chocolates-300x300.jpg", price: 55},
     { name: "Cherry Wedding Cake", category: "Cake", image: "https://www.cakesbyrobin.co.uk/assets/Naked-Wedding-Cake-300x300.jpg", price: 35},
     { name: "Lemond Curd Cake", category: "Cake", image: "https://cakeinn.co.uk/wp-content/uploads/nc/62785024/4202644026-300x300.png", price: 42.5},
