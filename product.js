@@ -40,18 +40,30 @@ let calculation = () => {
 };
 
 // Increment function
-let increment = (id) => {
-    let search = basket.find((x) => x.id === id);
+let increment = (id, name, price) => {
+    // Find the product in the products array by its ID
+    let product = products.find((x) => x.id === id);
     
+    // If product is not in the basket yet, add it
+    let search = basket.find((x) => x.id === id);
     if (search === undefined) {
-        basket.push({ id, item: 1 });
+        // Push the full product details (including quantity) to the basket
+        basket.push({
+            id,
+            name: name,
+            price: price,            
+            item: 1, // Starting quantity is 1            
+        });
     } else {
+        // If product is already in the basket, increase the quantity
         search.item += 1;
     }
-    
+
+    // Save the updated basket to localStorage
     localStorage.setItem("data", JSON.stringify(basket));
     calculation();
 };
+
 
 // Decrement function
 let decrement = (id) => {
@@ -83,7 +95,7 @@ function generateShop() {
                         <span class="icon-wrapper-remove" onclick="decrement(${item.id})">
                             <i class="fa fa-trash fa-2x"></i>
                         </span>
-                        <span class="icon-wrapper" onclick="increment(${item.id})">
+                        <span class="icon-wrapper" onclick="increment(${item.id}, '${item.name}', ${item.price})">
                             <i class="fa fa-shopping-bag fa-2x"></i>
                         </span>
                     </div>
