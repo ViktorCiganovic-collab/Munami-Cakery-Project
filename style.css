@@ -11,7 +11,8 @@ body {
     font-optical-sizing: auto;    
     font-style: normal;
     scroll-behavior: smooth;    
-    background: linear-gradient(135deg, #fcb69f, #fdbf77);       
+    /* background: linear-gradient(135deg, #fcb69f, #fdbf77);    */
+    background-color: #957941;   
 }
 
 html, body {

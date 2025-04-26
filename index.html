@@ -9,6 +9,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
        <link rel="icon" href="https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg" type="image/jpeg">
+<style>
+  /* Container for the section */
+.section_video {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Full-screen video */
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the section */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Overlay Content on top of the video */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content */
+  text-align: center;
+  color: white;
+  padding: 20px;
+  max-width: 90%;
+  z-index: 2;
+}
+
+/* Styling for the heading */
+.overlay-content h1 {
+  font-size: 4rem; /* Large heading */
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Pacifico', cursive; 
+}
+
+@media (max-width: 500px) {
+
+  .overlay-content h1 {
+    font-size: 1rem;
+  }
+}
+
+/* Styling for the paragraph */
+.overlay-content p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif; /* Standard font for description */
+}
+
+/* Button styles */
+.btn {
+  font-size: 1.25rem;
+  padding: 15px 30px;
+  background-color: #f39c12; /* Warm yellow-orange */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e67e22; /* Darker orange when hovered */
+}
+
+</style>
+
 </head>
 <body>  
 <div class="img-section" id="hero_section">
@@ -38,6 +111,25 @@
 <!-- <img class="bg-img" src="" alt="Bg image"> -->
 </div>  
 
+<div class="section_video">
+  <video autoplay muted loop class="video-background">
+    <source src="./images/7525330-hd_1920_1080_25fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Content Over the Video -->
+  <div class="overlay-content">
+    <h1>Baked with Love, Served with Joy</h1>
+    <p>Indulge in our freshly baked cakes, crafted with the finest ingredients and a touch of creativity. Perfect for every occasion—whether it’s a birthday, wedding, or just because!</p>
+    <a href="product.html" class="btn">Treat Yourself Today</a>
+  </div>
+</div>
+
+
+
+
+
+
 <section class="section_two">
 <!--carousel starts here-->
 <div class="section_two2 section_carousel col-lg-6 col-md-6 col-sm-6 col-xs-6 ml-auto mr-auto mt-5">
@@ -50,14 +142,14 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100 h-100" src="https://i.postimg.cc/cHPBF0Jw/output-7.jpg" alt="Second slide">
+      <img class="d-block w-100 h-100" src="./images/carouselimgThree.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 h-100 h-100" src="https://i.postimg.cc/j2NQ9mW9/output-8.jpg" alt="First slide">
+      <img class="d-block w-100 h-100 h-100" src="./images/carouselimgTwo.jpg" alt="First slide">
       
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 h-100" src="https://i.postimg.cc/pXbB8W4t/output-9.jpg" alt="Third slide">
+      <img class="d-block w-100 h-100" src="./images/carouselimgOne.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -76,11 +168,11 @@
 <!--Reviews-->
 <div class="row sectionRatings mt-5 mb-5">
 
-<div class="col-md-6 text-center ml-auto mr-auto"><figure class="text-end">
+<div class="col-md-6 text-center ml-auto mr-auto text-white"><figure class="text-end">
     <blockquote class="blockquote">
       <p>Reviews of Customers.</p>
     </blockquote>
-    <figcaption class="blockquote-footer text-dark">
+    <figcaption class="blockquote-footer text-white">
         Absolutely delicious!!!
         The éclairs I tasted were a marvel of confectionery craftsmanship. Its choux pastry shell was perfectly light and crisp, giving way to a silky, rich filling. The creamy custard inside was impeccably smooth, with just the right balance of sweetness. Topped with a glossy, decadent glaze, each bite delivered a sublime harmony of textures and flavors. The contrast between the crisp pastry and the velvety filling made every mouthful an indulgent delight. These éclairs were not merely a dessert; it was an exquisite experience, a testament to the artistry of fine pastry making. <cite title="Source Title">Source Title</cite>
     </figcaption>
