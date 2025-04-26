@@ -1,89 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Munamii Cakery Project</title>
+  
+    <!-- SEO -->
+    <title>Munamii Cakery – Webbutvecklingsprojekt av Viktor Ciganovic</title>
+    <meta name="description" content="Munamii Cakery är ett projekt skapat av Viktor Ciganovic – software developer & web designer. Ett utbildningsprojekt som visar design, frontend och responsivitet.">
+    <meta name="keywords" content="Viktor Ciganovic, webbutveckling, software developer, web designer, Munamii Cakery, utbildningsprojekt, frontend, HTML, CSS, JavaScript">
+    <meta name="author" content="Viktor Ciganovic">
+    <meta name="google-site-verification" content="Ei8Ic4FdwJ6tLVPq8ccfeXy6qDPsm0BQDHQRRw1ZOkg" />
+  
+    <!-- Open Graph -->
+    <meta property="og:title" content="Munamii Cakery – Projekt av Viktor Ciganovic" />
+    <meta property="og:description" content="Ett webbutvecklingsprojekt av Viktor Ciganovic, skapad under utbildning. Fokus på design, responsivitet och frontend." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mynodeapp-bwfy.onrender.com/" />
+    <meta property="og:image" content="https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg" />
+  
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Viktor Ciganovic",
+      "url": "https://mynodeapp-bwfy.onrender.com/",
+      "sameAs": [
+        "https://www.instagram.com/munamii.cakery/",
+        "https://www.facebook.com/munamiicupcakes"
+      ],
+      "jobTitle": "Software Developer & Web Designer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Utbildningsprojekt – Munamii Cakery"
+      }
+    }
+    </script>
+  
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-       <link rel="icon" href="https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg" type="image/jpeg">
-       <meta name="google-site-verification" content="Ei8Ic4FdwJ6tLVPq8ccfeXy6qDPsm0BQDHQRRw1ZOkg" />
-<style>
-  /* Container for the section */
-.section_video {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden;
-}
-
-/* Full-screen video */
-.video-background {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the video covers the section */
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* Overlay Content on top of the video */
-.overlay-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the content */
-  text-align: center;
-  color: white;
-  padding: 20px;
-  max-width: 90%;
-  z-index: 2;
-}
-
-/* Styling for the heading */
-.overlay-content h1 {
-  font-size: 4rem; /* Large heading */
-  font-weight: bold;
-  margin-bottom: 20px;
-  font-family: 'Pacifico', cursive; 
-}
-
-@media (max-width: 500px) {
-
-  .overlay-content h1 {
-    font-size: 1rem;
-  }
-}
-
-/* Styling for the paragraph */
-.overlay-content p {
-  font-size: 1.25rem;
-  margin-bottom: 30px;
-  font-family: 'Arial', sans-serif; /* Standard font for description */
-}
-
-/* Button styles */
-.btn {
-  font-size: 1.25rem;
-  padding: 15px 30px;
-  background-color: #f39c12; /* Warm yellow-orange */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #e67e22; /* Darker orange when hovered */
-}
-
-</style>
-
-</head>
+    <link rel="icon" href="https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg" type="image/jpeg">
+  
+   
+    <style>
+      /* Container for the section */
+      .section_video {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+  
+      /* Full-screen video */
+      .video-background {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+  
+      /* Overlay Content on top of the video */
+      .overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        padding: 20px;
+        max-width: 90%;
+        z-index: 2;
+      }
+  
+      /* Styling for the heading */
+      .overlay-content h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: 'Pacifico', cursive;
+      }
+  
+      @media (max-width: 500px) {
+        .overlay-content h1 {
+          font-size: 1rem;
+        }
+      }
+  
+      /* Styling for the paragraph */
+      .overlay-content p {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+        font-family: 'Arial', sans-serif;
+      }
+  
+      /* Button styles */
+      .btn {
+        font-size: 1.25rem;
+        padding: 15px 30px;
+        background-color: #f39c12;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+  
+      .btn:hover {
+        background-color: #e67e22;
+      }
+    </style>
+  </head>
+  
 <body>  
 <div class="img-section" id="hero_section">
 <nav class="navbar navbar-expand-lg navbar-dark">
