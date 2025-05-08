@@ -15,9 +15,6 @@ body {
     background-color: #957941;   
 }
 
-html, body {
-    overflow-x: hidden;
-}
 
 * {
     margin: 0;
@@ -68,7 +65,7 @@ background-position: center center;
 }
 
 #hero_section_products {
-background-image: url('./images/productspageBg.jpg');
+background-image: url('./images/products_bg.avif');
 width: 100%;
 height: auto;
 background-size: cover;
@@ -236,7 +233,12 @@ height: auto;
 
 .card-img-top {
     height: auto; /* Set a fixed height for the image */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-fit: cover; /* Ensures the image covers the area without distortion */    
+}
+
+.product-img {
+    transition: opacity 0.3s ease-in-out;
+    cursor:zoom-in;
 }
 
 .card-body {

@@ -10,22 +10,22 @@ const itemContainer = document.querySelector(".cupcakes");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 const products = [
-    { name: "Easy Chocolate Cupcake", category: "Cupcake", image: "./images/chocolateeasycup.webp", price: 12.5 },
-    { name: "Heavenly Chocolate Cupcake", category: "Cupcake", image: "./images/heavenlychoc.jpg", price: 7.5 },
-    { name: "Air Fryer Cupcake", category: "Cupcake", image: "https://www.supergoldenbakes.com/wordpress/wp-content/uploads/2023/03/Air_Fryer_Cupcakes-1-4-300x300.jpg", price: 8 },
-    { name: "Rainbow Cupcake", category: "Cupcake", image: "./images/rainbowcupcake.webp", price: 20 },
-    { name: "Cupcake Autumn", category: "Cupcake", image: "./images/output (11).jpg", price: 14 },
-    { name: "Lime Cupcake", category: "Cupcake", image: "./images/limecup.jpg", price: 18 },    
-    { name: "Chocolate Cupcake Peanut Butter", category: "Cupcake", image: "./images/peanutcupcake.webp", price: 8 },
-    { name: "Strawberry Cupcake", category: "Cupcake", image: "https://i.postimg.cc/nLTZkLjK/output.jpg", price: 20 },
-    { name: "Choko Chip Cake", category: "Cake", image: "./images/output (12).jpg", price: 55},
-    { name: "Cherry Wedding Cake", category: "Cake", image: "./images/cheryyweddingcake.webp", price: 35},
-    { name: "Lemon Curd Cake", category: "Cake", image: "./images/LEMON2-scaled.webp", price: 42.5},
-    { name: "Three Tier Wedding Cake", category: "Cake", image: "./images/threetiercake.jpg", price: 37},
-    { name: "Wedding Cake", category: "Cake", image: "./images/output (13).jpg", price: 32.5},
-    { name: "Marsipan Cake", category: "Cake", image: "./images/marsipancake.webp", price: 57},
-    { name: "Velvet Delight Mini Cake", category: "Cake", image: "./images/81Yz4eelOGL.jpg", price: 25},
-    { name: "Black Forest Cake", category: "Cake", image: "./images/blackforestcake.jpg", price: 60}
+    { name: "Easy Chocolate Cupcake", category: "Cupcake", image: "./images/chocolateeasycup.webp", altImg: "./images/easychocAlt.webp", price: 12.5 },
+    { name: "Heavenly Chocolate Cupcake", category: "Cupcake", image: "./images/heavenlychoc.jpg", altImg: "./images/heavenlychocAlt.jpg", price: 7.5 },
+    { name: "Air Fryer Cupcake", category: "Cupcake", image: "https://www.supergoldenbakes.com/wordpress/wp-content/uploads/2023/03/Air_Fryer_Cupcakes-1-4-300x300.jpg", altImg: "./images/Air_Fryer_Cupcakes.jpg", price: 8 },
+    { name: "Rainbow Cupcake", category: "Cupcake", image: "./images/rainbowcupcake.webp", altImg: "./images/Pink-Lemonade-Cupcakes-1-scaled.jpg", price: 20 },
+    { name: "Cupcake Autumn", category: "Cupcake", image: "./images/output (11).jpg", altImg: "./images/autumncupcake.jpeg", price: 14 },
+    { name: "Lime Cupcake", category: "Cupcake", image: "./images/limecup.jpg", altImg: "./images/limecup_alt.jpg", price: 18 },    
+    { name: "Chocolate Cupcake Peanut Butter", category: "Cupcake", image: "./images/peanutcupcake.webp", altImg: "./images/peanutcupcake_alt.webp", price: 8 },
+    { name: "Strawberry Cupcake", category: "Cupcake", image: "https://i.postimg.cc/nLTZkLjK/output.jpg", altImg: "./images/Strawberrycucpcake_alt.webp", price: 20 },
+    { name: "Choko Chip Cake", category: "Cake", image: "./images/output (12).jpg", altImg: "./images/browniecupcake_alt.jpg", price: 55},
+    { name: "Cherry Wedding Cake", category: "Cake", image: "./images/cheryyweddingcake.webp", altImg: "./images/cherryweddingcake_alt.jpg", price: 35},
+    { name: "Lemon Curd Cake", category: "Cake", image: "./images/LEMON2-scaled.webp", altImg: "./images/lemoncurdcake_alt.jpg", price: 42.5},
+    { name: "Three Tier Wedding Cake", category: "Cake", image: "./images/threetiercake.jpg", altImg: "./images/threetier_alt.jpg", price: 37},
+    { name: "Wedding Cake", category: "Cake", image: "./images/output (13).jpg", altImg: "./images/weddingcake_alt.jpg", price: 32.5},
+    { name: "Marsipan Cake", category: "Cake", image: "./images/marsipancake.webp", altImg: "./images/marsipancake_alt.jpg", price: 57},
+    { name: "Velvet Delight Mini Cake", category: "Cake", image: "./images/81Yz4eelOGL.jpg", altImg: "./images/velvet_alt.jpeg", price: 25},
+    { name: "Black Forest Cake", category: "Cake", image: "./images/blackforestcake.jpg", altImg: "./images/blackforestcake_alt.webp", price: 60}
 ];
 
 // Set numeric IDs for cupcakes
@@ -82,11 +82,19 @@ let decrement = (id) => {
 
 // Function to generate shop items
 function generateShop() {
+    itemContainer.innerHTML = ""; // Clear existing items
+
     products.forEach((item) => {
         itemContainer.innerHTML += `
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card h-100">
-                <img class="img-fluid card-img-top" src="${item.image}" alt="${item.name}">
+                <img 
+                    class="img-fluid card-img-top product-img"
+                    src="${item.image}"
+                    alt="${item.name}"
+                    data-original="${item.image}"
+                    data-alt="${item.altImg || item.image}"
+                >
                 <div class="card-body">
                     <h5 class="card-title">${item.name}</h5>
                     <p class="card-text">${item.category}</p>
@@ -103,7 +111,32 @@ function generateShop() {
             </div>
         </div>`;
     });
+
+    // Add hover effects
+    setTimeout(() => {
+        const images = document.querySelectorAll('.product-img');
+        images.forEach(img => {
+            img.addEventListener('mouseenter', () => {
+                img.style.opacity = '0';
+                setTimeout(() => {
+                    const altSrc = img.getAttribute('data-alt');
+                    if (altSrc) img.src = altSrc;
+                    img.style.opacity = '1';
+                }, 350);
+            });
+
+            img.addEventListener('mouseleave', () => {
+                img.style.opacity = '0';
+                setTimeout(() => {
+                    img.src = img.getAttribute('data-original');
+                    img.style.opacity = '1';
+                }, 150);
+            });
+        });
+    }, 0); // Ensure elements are in DOM
 }
+
+
 
 // Initial setup
 generateShop();
