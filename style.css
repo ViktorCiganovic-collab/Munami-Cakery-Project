@@ -229,6 +229,15 @@ background-repeat: no-repeat;
 min-height: 100vh;   
 }
 
+.section_two2 {
+  overflow-x: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* eller mindre */
+}
+
 .carousel-inner img {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
