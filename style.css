@@ -45,7 +45,7 @@ body {
 
 @media (max-width: 768px) {
     #hero_section, #hero_section_about, #hero_section_products, #hero_section_contact, #hero_section_cart {
-        min-height: 60vh;
+        min-height: 100vh;
     }
 }
 
