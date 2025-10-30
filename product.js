@@ -136,8 +136,15 @@ function generateShop() {
     }, 0); // Ensure elements are in DOM
 }
 
+ document.addEventListener('DOMContentLoaded', function () {
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true,     // whether animation should happen only once
+  });
+});
 
 
 // Initial setup
 generateShop();
 calculation();
+   

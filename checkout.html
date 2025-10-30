@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+
+    <section class="checkout pb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html"><img class="logo"
                 src="https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg" alt="Logo"></a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -25,7 +27,7 @@
         </div>
     </nav>
 
-    <div class="container checkoutDiv mt-5">
+    <div class="container checkoutDiv text-white">
         <h3 class="text-center">Checkout</h3>
         <div class="row">            
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-center mx-auto me-auto">
@@ -61,10 +63,20 @@
             </div>
         </div>
     </div>
+    </section>
 
-    <footer class="bg-info text-white text-center py-3">
-        <p>&copy; 2024 Munamii Cakery</p>
-    </footer>
+  <footer class="bg-info text-white text-center py-3">
+  <div class="container">
+      <p>&copy; 2024 Munamii Cakery</p>
+      <div>
+          <a href="https://www.facebook.com/munamiicupcakes" class="text-white mx-2" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="text-white mx-2" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/munamii.cakery/" target="_blank" class="text-white mx-2"><i class="fa fa-instagram"></i></a>
+          <!--<a href="#" class="text-white mx-2"><i class="fa fa-linkedin"></i></a>-->
+          <a href="https://api.whatsapp.com/send?phone=5930985750248" target="_blank" class="text-white mx-2"><i class="fa fa-whatsapp"></i></a>
+      </div>
+  </div>
+</footer>
 
     <!-- Stripe.js -->
     <script src="https://js.stripe.com/v3/"></script>
