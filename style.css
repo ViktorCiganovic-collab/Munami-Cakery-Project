@@ -21,6 +21,35 @@ body {
     padding: 0;
 }
 
+@media (max-width: 768px) {
+    .img-section, 
+    .section_two, 
+    .about, 
+    .productSortiment, 
+    .cartSection, 
+    .infosection, 
+    .checkout {
+        min-height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutSection, .payment-information {
+        width: 100% !important;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero_section, #hero_section_about, #hero_section_products, #hero_section_contact, #hero_section_cart {
+        min-height: 60vh;
+    }
+}
+
+
 
 a {
     font-weight: bold;
@@ -110,6 +139,7 @@ background-repeat: no-repeat;
 
 .container {
    margin-top: 0;
+    padding: 0;
 }
 
 .img-section {
@@ -320,6 +350,7 @@ background-position: center;
 }
 
 footer {
+    margin-top: 0;
     width: 100%;
     height: auto;
     background: url('./images/pexels-feelartfeelant-1028708.jpg');
