@@ -109,7 +109,7 @@ background-repeat: no-repeat;
 }
 
 .container {
-    margin-top: 60px; /* Space below the sticky cart */
+   margin-top: 0;
 }
 
 .img-section {
@@ -194,6 +194,20 @@ background-repeat: no-repeat;
 min-height: 100vh;     
 padding-top: 50px;
 }
+
+@media (max-width: 768px) {
+    .aboutSection, .payment-information {
+        width: 100% !important;
+        margin: 0 auto; /* centrera om du vill */
+        padding: 0 15px; /* lite inre marginal */
+    }
+    .about {
+        min-height: auto;
+        padding-top: 20px; /* eller mindre */
+        padding-bottom: 20px;
+    }
+}
+
 
 /* Product page */
 .productSortiment {
