@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
 
 body {
     height: auto;
     width: 100%;   
-    max-width: 100vw;
+    max-width: 100%;
     overflow-x: hidden; 
+     overscroll-behavior-x: none;
+    overscroll-behavior-y: contain;
     margin: 0;    
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;    
@@ -13,6 +20,26 @@ body {
     scroll-behavior: smooth;    
     /* background: linear-gradient(135deg, #fcb69f, #fdbf77);    */
     background-color: #957941;   
+}
+
+.navbar, .container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar-collapse {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.carousel, .carousel-inner {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 
@@ -246,8 +273,12 @@ background-size:cover ;
 background-repeat: no-repeat;
 min-height: 100vh;     
 background-position: center;
+}
 
-/* padding-top: 50px; */
+@media (max-width: 768px) {
+    .productSortiment {
+    background: url('./images//autumncupcake.jpeg')
+    }
 }
 
 .headlineWrapper {
