@@ -268,7 +268,7 @@ min-height: 100vh;
 padding-top: 50px;
 }
 
-@media (max-width: 1024) {
+@media (max-width: 1024px) {
     .aboutSection, .payment-information {
         width: 100% !important;
         margin: 0 auto; /* centrera om du vill */
