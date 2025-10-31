@@ -52,7 +52,7 @@ img {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .img-section, 
     .section_two, 
     .about, 
@@ -66,7 +66,7 @@ img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .aboutSection, .payment-information {
         width: 100% !important;
         margin: 0 auto;
@@ -74,7 +74,7 @@ img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #hero_section, #hero_section_about, #hero_section_products, #hero_section_contact, #hero_section_cart {
         min-height: 100vh;
     }
@@ -268,7 +268,7 @@ min-height: 100vh;
 padding-top: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024) {
     .aboutSection, .payment-information {
         width: 100% !important;
         margin: 0 auto; /* centrera om du vill */
