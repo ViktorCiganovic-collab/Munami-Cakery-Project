@@ -233,6 +233,26 @@ min-height: 100vh;
   overflow-x: hidden;
 }
 
+.introducingSection {
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.3)
+  );
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.4);
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .introducingSection {
+        max-width: 70%;
+    }
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%; /* eller mindre */
